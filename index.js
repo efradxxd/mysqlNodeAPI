@@ -5,7 +5,7 @@ var app = express();
 
 app.use(function(req, res, next) {
   res.locals.connection = mysql.createConnection({
-    host: "localhost", //put you db host
+    host: "ec2-54-193-71-144.us-west-1.compute.amazonaws.com", //put you db host
     user: "root",
     password: "",
     database: "duarte"
